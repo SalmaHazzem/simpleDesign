@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header img {
+    width: 100%;
+}
+nav {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;   
+}
+
+nav p {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+nav p span {
+    color: #10cab7;;
+}
+
+.list {
+    position: absolute;
+    right: 27%;
+    bottom: 3.2rem;
+}
+.list div {
+    border: 0.05rem black solid;
+    width: 1.15rem;
+    margin-bottom: 0.3rem;
+}
+
+.hidden-list {
+    position: relative;
+    bottom: -5.05rem;
+    right: 65%;
+    background-color: #e8e2e299;
+    visibility: hidden;
+}
+
+.hidden-list ul {
+    list-style-type: none;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+    margin: 0;
+
+}
+
+.hidden-list ul li {
+    font-size: 1rem;
+    border-bottom: 0.05rem #00000059 solid;
+    padding-bottom: 0.3rem;
+    padding-right: 3.5rem;
+    padding-top: 0.55rem;
+}
+
+ .visible:hover .hidden-list {
+    visibility:visible;
+} 
+
+.front {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    text-align: center;
+}
+
+.front h1 {
+    color: #10cab7;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.front p {
+    margin: 0;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+.first-sec {
+    display: flex;
+    background-color: #dcdcdc47;
+    padding: 1.75rem;
+
+    padding-bottom:5rem;
+    padding-top: 5rem;
+}
+
+.first-sec div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.first-sec div h2 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 0;   
+}
+
+.first-sec div p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #7a7575;
+}
+
+.second-sec {
+    margin-top: 3.25rem;
+}
+.service-f {
+    text-align: center;
+}
+.service-f h2 {
+    font-size: 5rem;
+    color: #dcdcdc8c;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.service-f p {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    position: relative;
+    top: -1.85rem;
+    color: #9d9595;
+}
+
+.products {
+    margin-left: 1.5rem;
+}
+.opts {
+    display: flex;
+    font-size: 0.5rem;
+    float: left;
+    width: 73%;
+    flex-wrap: wrap;
+}
+.opts h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #10cab7;
+    text-transform: capitalize;
+}
+.opts p {
+    font-size: 0.8rem;
+    color: #9b9090;
+}
+.serv {
+    width: 50%;
+}
+
+.side img {
+    width: 13.5rem;
+    box-shadow: 0.9rem  0.35rem  #2c4755;
+}
+
+.third-sec {
+    background-color: #dcdcdc54;
+    padding: 1.75rem;
+    margin-top: 3.25rem;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+}
+
+.proj {
+    background-color: white;
+    margin-right: 2.5rem;
+}
+.proj h2 {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 0.7rem;
+}
+
+.proj p {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    color: #736e6e;
+    padding-left: 0.7rem;
+}
+
+.colored {
+    margin-right: 3.5rem;
+    margin-left: 1.5rem;
+}
+
+.colored img {
+    width: 13.5rem;
+    box-shadow: 0.9rem 0.35rem #ebeced;
+}
+.about-sec {
+    display: flex;
+    align-items: center;
+}
+.about-sec p {
+    font-size: 0.9rem;
+    width: 66%;
+}
+
+.f {
+    font-weight: bold;
+    border-bottom: 0.05rem #10cab7 solid;
+}
+.fifth-sec {
+    background-color: #dcdcdc5e;
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-top: 3.25rem;
+}
+
+.lasty p {
+    color: #2c4755;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.lasty a {
+    text-decoration: none;
+    color: #10cab7;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+footer {
+    background-color: #000000c2;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width:800px) {
+    html {
+        font-size: 13px;
+    }
+
+
+    .side img {
+        width: 30px;
+         visibility: hidden;
+    }
+
+    * {
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.3rem !important;
+    }
+    .front {
+        top: 13%;
+    left: 7%;
+    }
+    nav {
+        flex-direction: row;
+    }
+    .service-f h2  {
+        font-size: 4rem;
+    }
+    .opts,.serv,.about-sec p {
+        width: 100%;
+    }
+}
